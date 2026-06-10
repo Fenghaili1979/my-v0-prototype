@@ -1,0 +1,207 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import 'shadcn/tailwind.css';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --font-heading: var(--font-sans);
+  --font-sans: var(--font-geist-sans), 'Geist Fallback';
+  --font-mono: var(--font-geist-mono), 'Geist Mono Fallback';
+
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --color-foreground: var(--foreground);
+  --color-background: var(--background);
+
+  /* 业务语义令牌 */
+  --color-ai: var(--ai);
+  --color-ai-foreground: var(--ai-foreground);
+  --color-cad: var(--cad);
+  --color-cad-foreground: var(--cad-foreground);
+  --color-credit: var(--credit);
+  --color-credit-foreground: var(--credit-foreground);
+  --color-laser: var(--laser);
+  --color-uv: var(--uv);
+  --color-print3d: var(--print3d);
+
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+}
+
+:root {
+  /* 深色科技主题 — 默认即深色 */
+  --background: oklch(0.16 0.012 277);
+  --foreground: oklch(0.96 0.004 277);
+  --card: oklch(0.205 0.013 277);
+  --card-foreground: oklch(0.96 0.004 277);
+  --popover: oklch(0.21 0.014 277);
+  --popover-foreground: oklch(0.96 0.004 277);
+  --primary: oklch(0.62 0.21 292);
+  --primary-foreground: oklch(0.99 0 0);
+  --secondary: oklch(0.27 0.015 277);
+  --secondary-foreground: oklch(0.96 0.004 277);
+  --muted: oklch(0.26 0.013 277);
+  --muted-foreground: oklch(0.68 0.012 277);
+  --accent: oklch(0.29 0.018 277);
+  --accent-foreground: oklch(0.96 0.004 277);
+  --destructive: oklch(0.63 0.22 25);
+  --border: oklch(1 0 0 / 9%);
+  --input: oklch(1 0 0 / 13%);
+  --ring: oklch(0.62 0.21 292);
+
+  /* AI = 紫色, CAD = 蓝色, 积分 = 橙色 */
+  --ai: oklch(0.62 0.21 292);
+  --ai-foreground: oklch(0.99 0 0);
+  --cad: oklch(0.62 0.18 256);
+  --cad-foreground: oklch(0.99 0 0);
+  --credit: oklch(0.75 0.16 65);
+  --credit-foreground: oklch(0.2 0.02 65);
+  --laser: oklch(0.63 0.22 25);
+  --uv: oklch(0.62 0.21 292);
+  --print3d: oklch(0.62 0.18 256);
+
+  --chart-1: oklch(0.62 0.21 292);
+  --chart-2: oklch(0.62 0.18 256);
+  --chart-3: oklch(0.75 0.16 65);
+  --chart-4: oklch(0.63 0.22 25);
+  --chart-5: oklch(0.7 0.13 180);
+
+  --radius: 0.7rem;
+
+  --sidebar: oklch(0.18 0.012 277);
+  --sidebar-foreground: oklch(0.96 0.004 277);
+  --sidebar-primary: oklch(0.62 0.21 292);
+  --sidebar-primary-foreground: oklch(0.99 0 0);
+  --sidebar-accent: oklch(0.27 0.015 277);
+  --sidebar-accent-foreground: oklch(0.96 0.004 277);
+  --sidebar-border: oklch(1 0 0 / 9%);
+  --sidebar-ring: oklch(0.62 0.21 292);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  html {
+    @apply font-sans;
+  }
+}
+
+/* ===== 灰模 / 低保真层 =====
+   给容器加 .wireframe 即可把高保真页面降级为中保真灰模：
+   去饱和、统一灰阶、虚线占位、隐藏真实图像 */
+.wireframe {
+  filter: grayscale(1) contrast(0.92) brightness(1.02);
+}
+.wireframe * {
+  box-shadow: none !important;
+  background-image: none !important;
+}
+.wireframe img,
+.wireframe video,
+.wireframe [data-media] {
+  opacity: 0 !important;
+}
+.wireframe [data-media-frame] {
+  background: repeating-linear-gradient(
+    45deg,
+    oklch(0.3 0 0 / 0.35),
+    oklch(0.3 0 0 / 0.35) 10px,
+    oklch(0.34 0 0 / 0.35) 10px,
+    oklch(0.34 0 0 / 0.35) 20px
+  ) !important;
+  border: 1.5px dashed oklch(0.6 0 0 / 0.6) !important;
+  position: relative;
+}
+.wireframe [data-media-frame]::after {
+  content: '图像占位';
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  letter-spacing: 0.05em;
+  color: oklch(0.7 0 0 / 0.8);
+}
+.wireframe [data-wf-hide] {
+  visibility: hidden;
+}
+.wireframe [data-wf-box] {
+  border: 1.5px dashed oklch(0.6 0 0 / 0.55) !important;
+  border-radius: 4px;
+}
+
+/* 工具类：自定义业务色 */
+.text-ai { color: var(--ai); }
+.text-cad { color: var(--cad); }
+.text-credit { color: var(--credit); }
+.bg-ai { background-color: var(--ai); }
+.bg-cad { background-color: var(--cad); }
+.bg-credit { background-color: var(--credit); }
+.border-ai { border-color: var(--ai); }
+.border-cad { border-color: var(--cad); }
+
+.ai-glow {
+  background:
+    radial-gradient(60% 80% at 50% 0%, color-mix(in oklch, var(--ai) 28%, transparent), transparent 70%);
+}
+.cad-glow {
+  background:
+    radial-gradient(60% 80% at 50% 0%, color-mix(in oklch, var(--cad) 24%, transparent), transparent 70%);
+}
+.ai-gradient-text {
+  background: linear-gradient(90deg, var(--ai), color-mix(in oklch, var(--ai) 50%, var(--cad)));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* 蓝图网格背景，用于 CAD 区域 */
+.blueprint-grid {
+  background-image:
+    linear-gradient(to right, oklch(0.62 0.18 256 / 0.12) 1px, transparent 1px),
+    linear-gradient(to bottom, oklch(0.62 0.18 256 / 0.12) 1px, transparent 1px);
+  background-size: 22px 22px;
+}
+
+/* 细滚动条 */
+.thin-scroll::-webkit-scrollbar { width: 8px; height: 8px; }
+.thin-scroll::-webkit-scrollbar-thumb { background: oklch(1 0 0 / 0.12); border-radius: 99px; }
+.thin-scroll::-webkit-scrollbar-track { background: transparent; }
