@@ -1,0 +1,369 @@
+<mxfile host="app.diagrams.net" agent="Codex">
+  <diagram id="flow1" name="作品发布流程图">
+    <mxGraphModel dx="4055" dy="1138" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2100" pageHeight="1900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="start" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="开始" vertex="1">
+          <mxGeometry height="60" width="150" x="700" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="entry" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="入口分类" vertex="1">
+          <mxGeometry height="60" width="180" x="685" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="home" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="首页发布按钮" vertex="1">
+          <mxGeometry height="60" width="180" x="280" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="draftbox" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="草稿箱" vertex="1">
+          <mxGeometry height="60" width="180" x="680" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="rejectedentry" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="未通过作品" vertex="1">
+          <mxGeometry height="60" width="180" x="1120" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="blank" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="首次编辑：空白表单" vertex="1">
+          <mxGeometry height="60" width="210" x="265" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="backfill" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="回填原内容" vertex="1">
+          <mxGeometry height="60" width="190" x="910" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="fill" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="填写或修改作品信息" vertex="1">
+          <mxGeometry height="60" width="240" x="700" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="choice" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="选择操作" vertex="1">
+          <mxGeometry height="90" width="180" x="730" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="save" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="点击退出" vertex="1">
+          <mxGeometry height="60" width="180" x="1080" y="720" as="geometry" />
+        </mxCell>
+        <mxCell id="P6SvDjDpCNL60MBmekY1-11" edge="1" parent="1" source="draft" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="exitprompt" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1310" y="870" />
+              <mxPoint x="1310" y="870" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="P6SvDjDpCNL60MBmekY1-12" connectable="0" parent="P6SvDjDpCNL60MBmekY1-11" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="保存草稿并退出" vertex="1">
+          <mxGeometry relative="1" x="-0.2593" y="-4" as="geometry">
+            <mxPoint x="15" y="-4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="draft" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="退出提示" vertex="1">
+          <mxGeometry height="80" width="230" x="1055" y="820" as="geometry" />
+        </mxCell>
+        <mxCell id="exit" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="保存为草稿" vertex="1">
+          <mxGeometry height="60" width="180" x="1430" y="710" as="geometry" />
+        </mxCell>
+        <mxCell id="exitprompt" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="草稿状态&lt;br&gt;保留已填写内容&lt;br&gt;可继续编辑" vertex="1">
+          <mxGeometry height="60" width="180" x="1430" y="840" as="geometry" />
+        </mxCell>
+        <mxCell id="submit" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="提交" vertex="1">
+          <mxGeometry height="60" width="180" x="480" y="770" as="geometry" />
+        </mxCell>
+        <mxCell id="required" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="必填项是否完整？" vertex="1">
+          <mxGeometry height="90" width="190" x="475" y="900" as="geometry" />
+        </mxCell>
+        <mxCell id="gap" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="提示补充必填项&lt;br&gt;返回编辑" vertex="1">
+          <mxGeometry height="70" width="200" x="240" y="1030" as="geometry" />
+        </mxCell>
+        <mxCell id="ai" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="AI审核中&lt;br&gt;不可编辑" vertex="1">
+          <mxGeometry height="70" width="190" x="475" y="1030" as="geometry" />
+        </mxCell>
+        <mxCell id="airesult" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="AI审核结果" vertex="1">
+          <mxGeometry height="90" width="180" x="480" y="1160" as="geometry" />
+        </mxCell>
+        <mxCell id="publish" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="成功发布作品" vertex="1">
+          <mxGeometry height="60" width="180" x="790" y="1175" as="geometry" />
+        </mxCell>
+        <mxCell id="manual" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="转人工审核" vertex="1">
+          <mxGeometry height="60" width="180" x="190" y="1175" as="geometry" />
+        </mxCell>
+        <mxCell id="manualres" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="人工审核已出结果？" vertex="1">
+          <mxGeometry height="90" width="190" x="185" y="1350" as="geometry" />
+        </mxCell>
+        <mxCell id="wait" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="待审核 / 审核中&lt;br&gt;不可编辑，提示等待" vertex="1">
+          <mxGeometry height="70" width="230" x="480" y="1360" as="geometry" />
+        </mxCell>
+        <mxCell id="rejected" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="进入未通过状态" vertex="1">
+          <mxGeometry height="60" width="200" x="20" y="1540" as="geometry" />
+        </mxCell>
+        <mxCell id="reedit" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="重新编辑&lt;br&gt;回填原填写内容" vertex="1">
+          <mxGeometry height="70" width="220" x="10" y="1650" as="geometry" />
+        </mxCell>
+        <mxCell id="del" parent="1" style="shape=note;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="删除管理&lt;br&gt;草稿、AI审核中、人工审核中、未通过、已发布均可删除" vertex="1">
+          <mxGeometry height="90" width="320" x="1950" y="1200" as="geometry" />
+        </mxCell>
+        <mxCell id="returnlist" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="结束本次编辑" vertex="1">
+          <mxGeometry height="75" width="260" x="1110" y="1590" as="geometry" />
+        </mxCell>
+        <mxCell id="end" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="结束" vertex="1">
+          <mxGeometry height="60" width="150" x="930" y="1740" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="start" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="entry" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="entry" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="home" value="首页">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="entry" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="draftbox" value="草稿箱">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="entry" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="rejectedentry" value="未通过作品">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="home" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="blank" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="draftbox" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="backfill" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1005" y="250" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="rejectedentry" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="backfill" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="1" source="blank" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="fill" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="1" source="backfill" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="fill" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1005" y="430" />
+              <mxPoint x="820" y="430" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e10" edge="1" parent="1" source="fill" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="choice" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e11" edge="1" parent="1" source="choice" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="save" value="退出">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="820" y="750" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e12" edge="1" parent="1" source="save" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="draft" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e14" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="exit" value="保存">
+          <mxGeometry relative="1" x="-0.1585" as="geometry">
+            <Array as="points">
+              <mxPoint x="1520" y="696.2" />
+            </Array>
+            <mxPoint x="901.6199999999991" y="696.22" as="sourcePoint" />
+            <mxPoint x="1510" y="693.78" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e15" edge="1" parent="1" source="exit" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="exitprompt" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e20" edge="1" parent="1" source="choice" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="submit" value="提交">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e21" edge="1" parent="1" source="submit" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="required" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e22" edge="1" parent="1" source="required" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="gap" value="否">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e23" edge="1" parent="1" source="gap" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="fill" value="返回编辑">
+          <mxGeometry relative="1" x="-0.3913" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="210" y="1055" />
+              <mxPoint x="210" y="560" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e24" edge="1" parent="1" source="required" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="ai" value="是">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e25" edge="1" parent="1" source="ai" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="airesult" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e26" edge="1" parent="1" source="airesult" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="publish" value="通过">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e27" edge="1" parent="1" source="airesult" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="manual" value="不通过">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e29" edge="1" parent="1" source="manualres" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="publish" value="通过">
+          <mxGeometry relative="1" x="-0.2857" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="275" y="1520" />
+              <mxPoint x="880" y="1520" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e30" edge="1" parent="1" source="manualres" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="rejected" value="不通过">
+          <mxGeometry relative="1" x="-0.0233" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="275" y="1520" />
+              <mxPoint x="120" y="1520" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="P6SvDjDpCNL60MBmekY1-6" connectable="0" parent="e30" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="已出结果" vertex="1">
+          <mxGeometry relative="1" x="-0.7698" y="-4" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e33" edge="1" parent="1" source="rejected" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="reedit" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e38" edge="1" parent="1" source="publish" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="end" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="P6SvDjDpCNL60MBmekY1-3" edge="1" parent="1" source="manualres" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;edgeStyle=orthogonalEdgeStyle;" target="wait" value="">
+          <mxGeometry height="50" relative="1" width="50" x="-0.0009" as="geometry">
+            <mxPoint x="360" y="1440" as="sourcePoint" />
+            <mxPoint x="410" y="1390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="P6SvDjDpCNL60MBmekY1-4" connectable="0" parent="P6SvDjDpCNL60MBmekY1-3" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="尚未出结果" vertex="1">
+          <mxGeometry relative="1" x="-0.3217" y="-3" as="geometry">
+            <mxPoint x="16" y="-3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="P6SvDjDpCNL60MBmekY1-5" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" target="manualres" value="">
+          <mxGeometry height="50" relative="1" width="50" x="-0.0029" as="geometry">
+            <mxPoint x="280" y="1240" as="sourcePoint" />
+            <mxPoint x="330" y="1190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="P6SvDjDpCNL60MBmekY1-7" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="manualres" value="">
+          <mxGeometry height="50" relative="1" width="50" x="-0.0154" as="geometry">
+            <Array as="points">
+              <mxPoint x="740" y="1390" />
+              <mxPoint x="740" y="1290" />
+              <mxPoint x="280" y="1290" />
+            </Array>
+            <mxPoint x="710" y="1390" as="sourcePoint" />
+            <mxPoint x="290" y="1290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="P6SvDjDpCNL60MBmekY1-8" edge="1" parent="1" source="reedit" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;innerLoopWaypoints=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="reedit">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="P6SvDjDpCNL60MBmekY1-9" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;" target="fill" value=" ">
+          <mxGeometry height="50" relative="1" width="50" x="0.0008" as="geometry">
+            <Array as="points">
+              <mxPoint y="1680" />
+              <mxPoint y="560" />
+            </Array>
+            <mxPoint x="10" y="1680" as="sourcePoint" />
+            <mxPoint x="60" y="1630" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="P6SvDjDpCNL60MBmekY1-10" edge="1" parent="1" source="exitprompt" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="fill" value="">
+          <mxGeometry relative="1" x="0.3836" as="geometry">
+            <Array as="points">
+              <mxPoint x="1610" y="865" />
+              <mxPoint x="1730" y="865" />
+              <mxPoint x="1730" y="560" />
+            </Array>
+            <mxPoint x="1685" y="920" as="sourcePoint" />
+            <mxPoint x="1630" y="630" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="P6SvDjDpCNL60MBmekY1-34" connectable="0" parent="P6SvDjDpCNL60MBmekY1-10" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="继续编辑" vertex="1">
+          <mxGeometry relative="1" x="-0.5455" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="P6SvDjDpCNL60MBmekY1-23" edge="1" parent="1" source="P6SvDjDpCNL60MBmekY1-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="P6SvDjDpCNL60MBmekY1-20">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1350" y="1020" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="P6SvDjDpCNL60MBmekY1-24" connectable="0" parent="P6SvDjDpCNL60MBmekY1-23" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="是，草稿或未通过" vertex="1">
+          <mxGeometry relative="1" x="0.4343" y="-9" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="P6SvDjDpCNL60MBmekY1-13" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="进入前是否已有&lt;br&gt;草稿或未通过记录？" vertex="1">
+          <mxGeometry height="100" width="230" x="1060" y="970" as="geometry" />
+        </mxCell>
+        <mxCell id="P6SvDjDpCNL60MBmekY1-15" edge="1" parent="1" source="draft" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="P6SvDjDpCNL60MBmekY1-13" value="直接退出">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1090" y="1200" as="sourcePoint" />
+            <mxPoint x="1285" y="1265" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="P6SvDjDpCNL60MBmekY1-17" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;" target="P6SvDjDpCNL60MBmekY1-18" value="">
+          <mxGeometry height="50" relative="1" width="50" x="0.013" as="geometry">
+            <Array as="points">
+              <mxPoint x="1045" y="1020" />
+            </Array>
+            <mxPoint x="1060" y="1020" as="sourcePoint" />
+            <mxPoint x="1110" y="970" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="P6SvDjDpCNL60MBmekY1-19" connectable="0" parent="P6SvDjDpCNL60MBmekY1-17" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="否，首次编辑" vertex="1">
+          <mxGeometry relative="1" x="0.0646" y="-3" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="P6SvDjDpCNL60MBmekY1-18" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="首次编辑：无记录&lt;br&gt;放弃填写内容" vertex="1">
+          <mxGeometry height="70" width="190" x="950" y="1088" as="geometry" />
+        </mxCell>
+        <mxCell id="P6SvDjDpCNL60MBmekY1-20" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="已有记录：恢复原内容&lt;br&gt;不删除原记录 " vertex="1">
+          <mxGeometry height="70" width="180" x="1260" y="1080" as="geometry" />
+        </mxCell>
+        <mxCell id="P6SvDjDpCNL60MBmekY1-25" edge="1" parent="1" source="P6SvDjDpCNL60MBmekY1-18" style="endArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="returnlist" value="">
+          <mxGeometry height="50" relative="1" width="50" x="-0.0547" as="geometry">
+            <Array as="points">
+              <mxPoint x="1045" y="1370" />
+              <mxPoint x="1220.2" y="1370" />
+            </Array>
+            <mxPoint x="1040" y="1160" as="sourcePoint" />
+            <mxPoint x="1090" y="1110" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="P6SvDjDpCNL60MBmekY1-27" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;" target="returnlist" value="">
+          <mxGeometry height="50" relative="1" width="50" x="0.2057" as="geometry">
+            <Array as="points">
+              <mxPoint x="1520" y="1627.5" />
+            </Array>
+            <mxPoint x="1520" y="900" as="sourcePoint" />
+            <mxPoint x="1570" y="850" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="P6SvDjDpCNL60MBmekY1-29" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;entryX=0.419;entryY=0.052;entryDx=0;entryDy=0;entryPerimeter=0;edgeStyle=orthogonalEdgeStyle;" target="returnlist" value="">
+          <mxGeometry height="50" relative="1" width="50" x="-0.0055" as="geometry">
+            <mxPoint x="1350" y="1150" as="sourcePoint" />
+            <mxPoint x="1400" y="1100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="P6SvDjDpCNL60MBmekY1-30" edge="1" parent="1" source="returnlist" style="endArrow=classic;dashed=1;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;endFill=1;" target="fill" value=" ">
+          <mxGeometry height="50" relative="1" width="50" x="0.044" as="geometry">
+            <Array as="points">
+              <mxPoint x="1230" y="1730" />
+              <mxPoint x="1910" y="1730" />
+              <mxPoint x="1910" y="560" />
+            </Array>
+            <mxPoint x="1230" y="1670" as="sourcePoint" />
+            <mxPoint x="1280" y="1620" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="P6SvDjDpCNL60MBmekY1-32" connectable="0" parent="P6SvDjDpCNL60MBmekY1-30" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;code&gt;再次进入编辑&lt;/code&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.6811" y="3" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="P6SvDjDpCNL60MBmekY1-31" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;" target="end" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1110" y="1630" as="sourcePoint" />
+            <mxPoint x="1010" y="1730" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
